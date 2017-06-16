@@ -1,4 +1,4 @@
-/* 
+/*
  * The MIT License
  *
  * Copyright (c) 2017 Edoardo Luppi <lp.edoardo@gmail.com>.
@@ -30,8 +30,6 @@ import com.ibm.as400.access.ErrorCompletingRequestException;
 import com.ibm.as400.access.ObjectDoesNotExistException;
 import com.ibm.as400.access.ProgramCall;
 import com.ibm.as400.access.ProgramParameter;
-import java.beans.PropertyVetoException;
-import java.io.IOException;
 import j.JUserSpace.JUserSpaceBuilder;
 import j.abstracts.JAbstractFile;
 import j.interfaces.AS400DataTypes;
@@ -39,13 +37,15 @@ import j.interfaces.JBase;
 import j.interfaces.JFile;
 import j.interfaces.JMember;
 import j.interfaces.JObject;
+import java.beans.PropertyVetoException;
+import java.io.IOException;
 
 import static com.ibm.as400.access.BinaryConverter.byteArrayToInt;
 import static j.JConnection.getInstance;
+import static j.misc.EmptyArrays.EMPTY_BYTE;
 import static j.misc.JUtil.getQualifiedPath;
 import static j.misc.JUtil.getRandomString;
 import static j.misc.JUtil.newMessage;
-import static j.misc.EmptyArrays.EMPTY_BYTE;
 
 /**
  * @author Edoardo Luppi
@@ -55,7 +55,7 @@ public final class JAPI implements AS400DataTypes
    private static final AS400Message ERROR_MESSAGE = newMessage("ERROR", "Program not called correctly");
 
    /**
-    * Deletes a user space object.
+    * Deletes a user space object. Test
     *
     * @see <a href="https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/apis/qusdltus.htm">IBM Knowledge Center</a>
     *
