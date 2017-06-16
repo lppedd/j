@@ -2,8 +2,10 @@
 Java Toolbox for IBM i
 
 ## What is j?
-**J** is a small framework that wraps the JTOpen library, to make its usage more user-friendly.
-I initially developed it for avoiding boring manual tasks, but soon I realised it could grow further and show its true potential.
+**J** is a small framework that wraps the JTOpen (JT400) library, to make its usage more user-friendly.
+I initially developed it to avoid boring manual tasks, but soon I realised it could grow further and show its true potential.
+**J** allows control over libraries, objects (which includes database files, device files, printer files), members, users, jobs and the machine itself.
+It also provides access to certain IBM API.
 
 ## Authors
 * Edoardo Luppi
