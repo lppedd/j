@@ -11,3 +11,6 @@ I initially developed it for avoiding boring manual tasks, but soon I realised i
 ## Acknowledgments
 I'd like to thanks the guys who developed the JTOpen (JT400) library.
 Also, thanks IBM.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
