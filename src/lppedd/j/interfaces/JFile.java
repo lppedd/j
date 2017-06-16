@@ -5,5 +5,5 @@ import lppedd.j.JRecordFormat;
 
 public interface JFile extends JObject
 {
-    public List<JRecordFormat> getRecordFormats();
+   public List<JRecordFormat> getRecordFormats();
 }

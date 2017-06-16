@@ -11,21 +11,21 @@ import static lppedd.j.misc.JUtil.checkForMessage;
  */
 public class JPrinterFile extends JAbstractDeviceFile
 {
-    protected JPrinterFile(final String name, final String library) {
-        super(name, library);
-    }
+   protected JPrinterFile(final String name, final String library) {
+      super(name, library);
+   }
 
-    @Override
-    protected boolean performSetText() {
-        final StringBuilder builder = new StringBuilder(144);
-        builder.append("CHGPRTF FILE(");
-        builder.append(_library);
-        builder.append("/");
-        builder.append(_name);
-        builder.append(") TEXT('");
-        builder.append(_text);
-        builder.append("')");
+   @Override
+   protected boolean performSetText() {
+      final StringBuilder builder = new StringBuilder(144);
+      builder.append("CHGPRTF FILE(");
+      builder.append(_library);
+      builder.append("/");
+      builder.append(_name);
+      builder.append(") TEXT('");
+      builder.append(_text);
+      builder.append("')");
 
-        return checkForMessage("CPC7303", getConnection().executeCommand(builder.toString()));
-    }
+      return checkForMessage("CPC7303", getConnection().executeCommand(builder.toString()));
+   }
 }

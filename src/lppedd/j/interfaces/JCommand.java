@@ -5,5 +5,5 @@ package lppedd.j.interfaces;
  */
 public interface JCommand<T>
 {
-    public T execute();
+   public T execute();
 }

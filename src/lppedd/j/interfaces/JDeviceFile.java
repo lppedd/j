@@ -5,5 +5,5 @@ package lppedd.j.interfaces;
  */
 public interface JDeviceFile extends JFile
 {
-    //
+   //
 }

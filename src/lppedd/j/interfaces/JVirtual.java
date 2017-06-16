@@ -8,5 +8,5 @@ package lppedd.j.interfaces;
  */
 public interface JVirtual
 {
-    //
+   //
 }

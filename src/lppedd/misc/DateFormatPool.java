@@ -11,40 +11,40 @@ import java.util.Map;
  */
 public final class DateFormatPool
 {
-    private static final Map<Long, DateFormat> FORMATTERS = new HashMap<>(16);
+   private static final Map<Long, DateFormat> FORMATTERS = new HashMap<>(16);
 
-    /**
-     * Ritorna un formattatore per il pattern specificato
-     *
-     * @param pattern Il pattern del formattatore
-     */
-    public static DateFormat get(final String pattern) {
-        final long key = pattern.hashCode();
-        DateFormat formatter = FORMATTERS.get(key);
+   /**
+    * Ritorna un formattatore per il pattern specificato
+    *
+    * @param pattern Il pattern del formattatore
+    */
+   public static DateFormat get(final String pattern) {
+      final long key = pattern.hashCode();
+      DateFormat formatter = FORMATTERS.get(key);
 
-        if (formatter == null) {
-            formatter = new SimpleDateFormat(pattern);
-            FORMATTERS.put(key, formatter);
-        }
+      if (formatter == null) {
+         formatter = new SimpleDateFormat(pattern);
+         FORMATTERS.put(key, formatter);
+      }
 
-        return formatter;
-    }
+      return formatter;
+   }
 
-    /**
-     * Ritorna un formattatore per il pattern specificato
-     *
-     * @param pattern Il pattern del formattatore
-     * @param locale Il locale del formattatore
-     */
-    public static DateFormat get(final String pattern, final Locale locale) {
-        final long key = pattern.hashCode() + locale.hashCode();
-        DateFormat formatter = FORMATTERS.get(key);
+   /**
+    * Ritorna un formattatore per il pattern specificato
+    *
+    * @param pattern Il pattern del formattatore
+    * @param locale  Il locale del formattatore
+    */
+   public static DateFormat get(final String pattern, final Locale locale) {
+      final long key = pattern.hashCode() + locale.hashCode();
+      DateFormat formatter = FORMATTERS.get(key);
 
-        if (formatter == null) {
-            formatter = new SimpleDateFormat(pattern, locale);
-            FORMATTERS.put(key, formatter);
-        }
+      if (formatter == null) {
+         formatter = new SimpleDateFormat(pattern, locale);
+         FORMATTERS.put(key, formatter);
+      }
 
-        return formatter;
-    }
+      return formatter;
+   }
 }
