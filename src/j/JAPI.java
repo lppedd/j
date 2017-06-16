@@ -55,7 +55,7 @@ public final class JAPI implements AS400DataTypes
    private static final AS400Message ERROR_MESSAGE = newMessage("ERROR", "Program not called correctly");
 
    /**
-    * Deletes a user space object. TEst
+    * Deletes a user space object. TEste
     *
     * @see <a href="https://www.ibm.com/support/knowledgecenter/en/ssw_ibm_i_72/apis/qusdltus.htm">IBM Knowledge Center</a>
     *
