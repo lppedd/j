@@ -24,12 +24,12 @@
 package smi.workitem;
 
 import java.util.ArrayList;
-import lppedd.misc.Pair;
+import j.misc.Pair;
 import smi.workitem.abstracts.SMIWorkItem;
 
 import static java.lang.System.arraycopy;
 import static java.util.Arrays.copyOf;
-import static lppedd.misc.Pair.of;
+import static j.misc.Pair.of;
 
 /**
  * {@code Work item : posizione nel sorgente}<br>

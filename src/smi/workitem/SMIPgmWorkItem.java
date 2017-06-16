@@ -25,8 +25,8 @@ package smi.workitem;
 
 import java.util.ArrayList;
 import java.util.List;
-import lppedd.j.exceptions.JInvalidWorkItemException;
-import lppedd.j.interfaces.JMember;
+import j.exceptions.JInvalidWorkItemException;
+import j.interfaces.JMember;
 import smi.workitem.abstracts.SMIWorkItem;
 
 /**
