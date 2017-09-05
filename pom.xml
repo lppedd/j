@@ -1,9 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>edoardo.j</groupId>
-    <artifactId>lppedd.j</artifactId>
-    <version>1.0</version>
+    <groupId>lppedd.j</groupId>
+    <version>1.1</version>
     <name>Java Toolbox for IBM i</name>
     <build>
         <sourceDirectory>src</sourceDirectory>
@@ -33,7 +32,5 @@
             <version>9.1</version>
         </dependency>
     </dependencies>
-    <properties>
-        <netbeans.hint.license>mit</netbeans.hint.license>
-    </properties>
+    <artifactId>api</artifactId>
 </project>
