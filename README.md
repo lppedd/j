@@ -1,3 +1,8 @@
+# Update
+This project will be rewritten completely using Kotlin 1.2.70, stay tuned.
+No more super-hierarchies or dozen of utility classes.
+If you see this let me know using an issue the JVM target you'd prefer, 1.6 or 1.8.
+
 # j
 Java Toolbox for IBM i
 
